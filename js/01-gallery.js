@@ -1,6 +1,6 @@
 import { galleryItems } from "./gallery-items.js";
-const gallerylist = document.querySelector(".gallery");
-gallerylist.addEventListener("click", onClick);
+const galleryList = document.querySelector(".gallery");
+galleryList.addEventListener("click", onClick);
 
 let instance = null;
 
@@ -19,7 +19,7 @@ const galleryListItem = galleryItems
   )
   .join("");
 
-gallerylist.insertAdjacentHTML("beforeend", galleryListItem);
+galleryList.insertAdjacentHTML("beforeend", galleryListItem);
 
 function onClick(evt) {
   evt.preventDefault();
